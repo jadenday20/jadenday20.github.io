@@ -33,16 +33,16 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color: var(accent2-color);
+    background-color: var(--accent2-color);
 }
 
 header>h1 {
-    color: var(secondary-color);
+    color: var(--secondary-color);
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: var(secondary-color);
+    color: var(--secondary-color);
     padding: 1em
 }
 
@@ -79,7 +79,7 @@ p {
 }
 
 nav {
-    background-color: var(accent2-color);
+    background-color: var(--accent2-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -102,5 +102,5 @@ nav a:visited {
 
 nav a:hover {
     color: var(--accent1-color);
-    background-color: var(accent2-color);
+    background-color: var(--accent2-color);
 }
