@@ -1,0 +1,15 @@
+body {
+    font-size: 18px;
+}
+
+header {
+    background-color: rgba(230,240,240);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Georgia", serif;
+}
+
+main>section>p {
+    color: rgba(0,70,0);
+}
