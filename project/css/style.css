@@ -1,15 +1,56 @@
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+:root {
+    --primary-color: #5DA9E9;
+    --secondary-color: #003F91;
+    --accent-color1: #E5F4E3;
+    --accent-color2: #6D326D;
+    --heading-font: "Lato display swap";
+    --paragraph-font: Lato, Helvetica, sans-serif
+}
+
+html {
+    background-color: var(--secondary-color);
+}
+
 body {
     font-size: 18px;
+    background-color: white;
+    padding: 2em;
 }
 
 header {
-    background-color: rgba(230,240,240);
+    background-color: var(--primary-color);
 }
 
 h1, h2, h3, h4 {
     font-family: "Georgia", serif;
 }
 
-main>section>p {
-    color: rgba(0,70,0);
+h2 {
+    text-decoration: underline;
+}
+
+p {
+    background-color: var(--accent-color1);
+}
+
+nav {
+    line-height: 3em;
+    text-align: center;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent-color2);
+    text-decoration: none;
+    font-size: 1.3em
 }
