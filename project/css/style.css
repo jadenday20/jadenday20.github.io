@@ -1,6 +1,8 @@
 header, main, footer {
-    max-width: 960px;
+    max-width: 1030px;
     margin: 0 auto;
+    background-color: white;
+    padding: 1rem 1rem 1rem 1rem
   }
 
 :root {
@@ -12,13 +14,9 @@ header, main, footer {
     --paragraph-font: Lato, Helvetica, sans-serif
 }
 
-html {
-    background-color: var(--secondary-color);
-}
-
 body {
     font-size: 16px;
-    background-color: white;
+    background-color: var(--secondary-color);
     padding: 2rem;
     font-family: "Palatino Linotype", Georgia, serif;
 }
@@ -26,7 +24,6 @@ body {
 header {
     background-color: var(--primary-color);
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -52,15 +49,11 @@ nav {
 nav>ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
 }
 
 li {
     margin: .5rem;
-    border: blue;
-    border-style: solid;
-    padding-left: .25rem;
-    padding-right: .25rem;
+    padding: 0 .25rem 0 .25rem;
 }
 
 nav a:link,
