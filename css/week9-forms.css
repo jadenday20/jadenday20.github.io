@@ -66,4 +66,7 @@ form {
 
   #feedback {
       display: none;
+      color: rgb(9, 120, 90);
+      text-align: center;
+      padding: 1.5rem;
   }
