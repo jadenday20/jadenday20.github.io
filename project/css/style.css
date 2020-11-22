@@ -274,5 +274,9 @@ form {
   }
   .amenities ul li a:link,
   .amenities ul li a:visited {
-      color: var(--accent-color2)
+      color: var(--accent-color2);
+      padding: .1em;
+  }
+  .amenities ul li a:hover {
+      background-color: var(--primary-color);
   }
