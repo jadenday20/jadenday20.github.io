@@ -60,13 +60,13 @@ li {
 
 nav a:link,
 nav a:visited {
-    color: var(--accent-color2);
+    color: var(--accent-color1);
     text-decoration: none;
     font-size: 1.3rem
 }
 
 nav a:hover {
-    background-color: var(--accent-color1);
+    background-color: var(--accent-color2);
 }
 
 footer {
