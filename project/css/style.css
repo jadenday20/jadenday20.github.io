@@ -288,15 +288,9 @@ button {
     background-color: var(--accent-color1);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 900px) {
     .wrapper {
         display: block;
-    }
-    .temple_image img,
-    .reception_image img,
-    .grid-image img,
-    .hero img {
-        width: 100%;
     }
     header {
         display: block;
@@ -312,6 +306,19 @@ button {
     }
     nav>ul {
         display: block;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .temple_image img,
+    .reception_image img,
+    .grid-image img,
+    .hero img {
+        width: 100%;
     }
     .action {
         background: none;
