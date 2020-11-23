@@ -9,7 +9,8 @@ header, main, footer {
     --primary-color: #5DA9E9;
     --secondary-color: #003F91;
     --accent-color1: #E5F4E3;
-    --accent-color2: #6D326D;
+    --accent-color2: #91288D;
+    --other-color: #999999;
     --heading-font: "Lato display swap";
     --paragraph-font: Lato, Helvetica, sans-serif
 }
@@ -278,5 +279,5 @@ form {
       padding: .1em;
   }
   .amenities ul li a:hover {
-      background-color: var(--primary-color);
+      background-color: var(--accent-color1);
   }
