@@ -98,6 +98,13 @@ footer {
     box-shadow: 5px 15px 40px #999;
 }
 
+.grid-image {
+    margin: 1.5em;
+    border: 1px solid #ccc;
+    padding: .75em;
+    box-shadow: 3px 5px 2px #999;
+}
+
 .temple_image img, 
 .reception_image img {
     display: block;
@@ -240,10 +247,6 @@ form {
       color: rgb(9, 120, 90);
       text-align: center;
       padding: 1.5rem;
-  }
-
-  .grid-image {
-      padding: 1.5em;
   }
 
   .main-grid {
