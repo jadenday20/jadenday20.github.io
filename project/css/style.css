@@ -10,7 +10,6 @@ header, main, footer {
     --secondary-color: #003F91;
     --accent-color1: #E5F4E3;
     --accent-color2: #91288D;
-    --other-color: #999999;
     --heading-font: "Lato display swap";
     --paragraph-font: Lato, Helvetica, sans-serif
 }
@@ -61,13 +60,13 @@ li {
 
 nav a:link,
 nav a:visited {
-    color: var(--accent-color1);
+    color: var(--accent-color2);
     text-decoration: none;
     font-size: 1.3rem
 }
 
 nav a:hover {
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color1);
 }
 
 footer {
