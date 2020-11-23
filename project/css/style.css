@@ -278,6 +278,9 @@ button {
     text-align: center;
 }
 
+.amenities ul li {
+    margin: 1em 0;
+}
 .amenities ul li a:link,
 .amenities ul li a:visited {
     color: var(--accent-color2);
