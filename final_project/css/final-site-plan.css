@@ -113,3 +113,11 @@ nav a:hover {
 .colored {
     color: var(--accent3-color);
 }
+
+.all-wireframes {
+    padding: 2em;
+}
+
+.wireframe {
+    padding: 1em;
+}
