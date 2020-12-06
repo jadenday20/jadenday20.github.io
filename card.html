@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Media Card Component</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            max-width: 100%;
+        }
+        .card {
+            width: 320px;
+            box-shadow: 1px 1px 4px 1px #888;
+            border-radius: 3px;
+            background-color: white; 
+            overflow: hidden;
+        }
+        footer {
+            padding: .75em;
+            color: #888;
+            display: flex;
+        }
+        button {
+            color: #888;
+        }
+        .card>p {
+            padding: .75em;
+            margin: 0;
+        }
+        span {
+            width: 100%;
+        }
+        span>p {
+            display: inline;
+            float: right;
+            margin: 5px;
+        }
+        .viewButton {
+            border-radius: 3px 0 0 3px;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .editButton {
+            border-radius: 0 3px 3px 0;
+            border-style: solid solid solid none;
+            border-width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <img src="https://picsum.photos/320/240" alt="Card Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum placeat odio corporis natus officiis? Dicta cupiditate hic perspiciatis debitis tempora consectetur et!</p>
+        <footer>
+                <button class="viewButton">View</button>
+                <button class="editButton">Edit</button>
+                <span><p>9 mins</p></span>
+        </footer>
+    </article>
+</body>
+
+</html>
