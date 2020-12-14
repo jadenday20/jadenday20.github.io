@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>String Instruments and Orchestras</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jaden Day">
+    <meta name="description" content="String Instruments and Orchestras 
+        is an informational website whose purpose is to educate those who 
+        are new to the orchestra world.">
+</head>
+
+<body>
+    <div class="interior">
+        <header>
+            <div class="front-heading">
+                <h1>String Instruments and Orchestras&nbsp;</h1>
+                <img src="images/project_logo.png" width="30px" height="30px"
+                    alt="String Instruments and Orchestras Logo">
+            </div>
+            <nav>
+                <div class="options">
+                    <button><a href="index.html">Home</a></button>
+                    <button><a href="instruments.html">Instruments</a></button>
+                    <button><a href="orchestras.html">Orchestras</a></button>
+                    <button><a href="the-music.html">The Music</a></button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="message"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <div class="button">
+                        <button type="submit">Submit Message</button>
+                    </div>
+                </ul>
+            </form>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('message');
+                // get the form element so we can read what was entered in it.
+                const formElement = document.forms[0];
+
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function (e) {
+                    // stop the form from doing the default action
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML =
+                        'Thank you for sending your feedback '+ formElement.user_name.value +'. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                });
+            </script>
+        </main>
+        <footer>
+            <div class="footer-paragraph">
+                <h3>Contact</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae tempora dolorem in harum, quidem
+                    adipisci obcaecati dolorum distinctio odit numquam.</p>
+            </div>
+            <div class="feedback">
+                <h4>Have questions or comments?</h4>
+                <button><a href="feedback.html">Send Feedback</a></button>
+                <p><a href="final-site-plan.html">Final Site Plan</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

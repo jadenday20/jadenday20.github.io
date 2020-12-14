@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color)
 }
 
+h2, h3, h4, h5, h6 {
+text-align: center;
+}
+
 header {
     padding: 1em;
     color: var(--accent2-color);
@@ -58,15 +62,19 @@ p {
 }
 
 nav {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     line-height: 3em;
     font-size: 1.2em;
-    margin: 0 10em 0 10em;
+    margin: 0 12em 0 12em;
 }
 
 nav>.options {
     display: flex;
     justify-content: space-between;
+}
+
+header button, footer button {
+    background-color: var(--accent3-color);
 }
 
 nav button {
@@ -75,26 +83,26 @@ nav button {
 }
 
 a {
-    padding: 1em;
+    margin: 1em;
     min-width: 70px
 }
 
 a:link,
 a:visited {
-    color: var(--primary-color);
+    color: var(--accent2-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--accent3-color);
-    /* background-color: var(--accent2-color) */
+    color: black;
 }
 
-.paragraph-group {
-    padding: 1em;
+.wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    grid-gap: 20px;
+    padding: 1em;
 }
 
 footer {
@@ -105,11 +113,12 @@ footer {
 }
 
 .paragraph {
-    text-align: center;
+    /* text-align: center; */
+    padding: 1em;
 }
 
 .footer-paragraph {
-    text-align: center;
+    /* text-align: center; */
     grid-column: 2 / 3;
 }
 
@@ -133,6 +142,77 @@ p>a:link, p>a:visited {
 
 p>a:hover {
     color: var(--accent3-color)
+}
+
+form {
+    /* Center the form on the page */
+    margin: 3em auto;
+    width: 25em;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 12.5em;
+    text-align: left;
+    padding: .25em;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 18.75em;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+    padding: .3em
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+form .button {
+    /* Align buttons with the text fields */
+    padding: 1.5em 0 0 3em;
+    /* same size as the label elements */
+}
+
+form button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+}
+
+#message {
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 1.5em;
+    margin: 1em;
+    background-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1050px) {
