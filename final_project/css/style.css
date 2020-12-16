@@ -101,6 +101,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    align-items: center;
     grid-gap: 20px;
     padding: 1em;
 }
@@ -115,6 +116,10 @@ footer {
 .paragraph {
     /* text-align: center; */
     padding: 1em;
+}
+
+.paragraph-image {
+    justify-self: center;
 }
 
 .footer-paragraph {
