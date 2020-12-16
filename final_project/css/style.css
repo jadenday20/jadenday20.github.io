@@ -82,6 +82,25 @@ nav button {
     margin: 1em;
 }
 
+header .button, footer .button {
+    background-color: var(--accent3-color);
+    border-style: solid;
+    border-color: #777777  #333333 #333333 #777777;
+    border-width: 2px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav .button {
+    padding: 7.5px;
+}
+
+footer .button {
+    padding: 5px;
+}
+
 a {
     margin: 1em;
     min-width: 70px
@@ -108,9 +127,22 @@ a:hover {
 
 footer {
     display: grid;
-    grid-template-columns: 3fr 4fr 4fr 3fr;
+    grid-template-columns: 3fr 4fr 4fr 4fr 3fr;
     background-color: var(--primary-color);
     align-items: center;
+}
+
+.card {
+    box-shadow: 1px 1px 4px 1px var(--accent2-color);
+    width: 180px;
+    justify-self: center;
+    background-color: var(--accent2-color);
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+    text-align: center;
 }
 
 .paragraph {
@@ -232,17 +264,20 @@ form button {
         display: block;
         justify-content: center;
     }
+    footer {
+        display: block;
+    }
+    .card {
+        margin: .5em auto .5em auto;
+    }
 }
 
 @media screen and (max-width: 550px) {
 
-    .paragraph-group img {
+    .wrapper img {
         width: 100%;
     }
-    .paragraph-group {
-        display: block;
-    }
-    footer {
+    .wrapper {
         display: block;
     }
 }
